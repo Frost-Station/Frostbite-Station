@@ -1,16 +1,145 @@
 - type: characterRequirementOverride
-  id: Reduced
+  id: Custom
   jobs:
+    # Command Department
     Captain:
+      - !type:CharacterDepartmentTimeRequirement
+        department: Command
+        min: 3600 # 1 hour
+    HeadOfPersonnel:
+      - !type:CharacterDepartmentTimeRequirement
+        department: Civilian
+        min: 3600
+    AdministrativeAssistant: []
+
+    # Logistics Department
+    Quartermaster:
+     - !type:CharacterDepartmentTimeRequirement
+       department: Logistics
+       min: 3600
+    CargoTechnician: []
+    SalvageSpecialist: []
+    MailCarrier: []
+
+    # Civilian Department
+    Assistant: []
+    Bartender: []
+    Botanist: []
+    Boxer: []
+    Chef: []
+    Chaplain: []
+    Clown: []
+    IAA: []
+    Janitor: []
+    Librarian: []
+    Mime: []
+    Musician: []
+    Passenger: []
+    Reporter: []
+    ServiceWorker: []
+    Visitor: []
+    Zookeeper: []
+    MartialArtist: []
+    Prisoner: []
+    Gladiator: []
+
+    # Justice Department
+    ChiefJustice:
     - !type:CharacterDepartmentTimeRequirement
-      department: Engineering
-      min: 3600 # 1 hours
+      department: Justice
+      min: 3600 # 1 hour
+    Clerk:
     - !type:CharacterDepartmentTimeRequirement
-      department: Medical
-      min: 3600 # 1 hours
+      department: Justice
+      min: 1800 # 30 minutes
+    Lawyer: []
+
+    # Dignitary Department
+    BlueshieldOfficer:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
-      min: 3600 # 1 hours
+      min: 3600 # 1 hour
     - !type:CharacterDepartmentTimeRequirement
       department: Command
       min: 3600 # 1 hour
+    NanotrasenRepresentative:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Command
+      min: 3600 # 1 hour
+    Magistrate:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # 1 hour
+
+    # Engineering Department
+    ChiefEngineer:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Engineering
+      min: 3600 # 1 hour
+    AtmosphericTechnician: []
+    SeniorEngineer:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Engineering
+      min: 1800 # 30 minutes
+    StationEngineer: []
+    TechnicalAssistant: []
+
+    # Medical Department
+    ChiefMedicalOfficer:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      min: 3600 # 1 hour
+    Chemist: []
+    MedicalDoctor: []
+    MedicalIntern: []
+    Psychologist: []
+    Paramedic: []
+    SeniorPhysician:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      min: 1800 # 1 hour
+    MedicalBorg: []
+
+    # Security Department
+    HeadOfSecurity:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # 1 hour
+    SecurityCadet: []
+    SecurityOfficer: []
+    SeniorOfficer:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 1800 # 30 minutes
+    Detective: []
+    Warden:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 1800 # 30 minutes
+    PrisonGuard: []
+    Brigmedic: []
+
+    # Epistemics Department
+    ResearchDirector:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Epistemics
+      min: 3600 # 1 hour
+    SeniorResearcher:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Epistemics
+      min: 1800 # 30 minutes
+    Scientist: []
+    ResearchAssistant: []
+    ForensicMantis: []
+    Roboticist: []
+
+    # Silicon Department
+    Borg:
+    - !type:CharacterOverallTimeRequirement
+      min: 3600  # time in seconds
+    StationAi:
+    - !type:CharacterOverallTimeRequirement
+      min: 3600  # time in seconds
+
+
+
