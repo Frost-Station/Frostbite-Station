@@ -43,17 +43,20 @@
 - type: markingPoints
   id: MobHumanMarkingLimits
   points:
+    Head:
+      points: 2
+      required: false
     Hair:
       points: 1
       required: false
     FacialHair:
       points: 1
       required: false
-    Face:
-      points: 6
+    Snout:
+      points: 1
       required: false
-    Head:
-      points: 2
+    Tail:
+      points: 1
       required: false
     HeadTop:
       points: 1
@@ -61,23 +64,14 @@
     HeadSide:
       points: 4
       required: false
-    Snout:
-      points: 1
-      required: false
     Chest:
       points: 6
       required: false
-    RightArm:
-      points: 6
+    Underwear:
+      points: 1
       required: false
-    RightHand:
-      points: 6
-      required: false
-    LeftArm:
-      points: 6
-      required: false
-    LeftHand:
-      points: 6
+    Undershirt:
+      points: 1
       required: false
     RightLeg:
       points: 6
@@ -91,14 +85,17 @@
     LeftFoot:
       points: 6
       required: false
-    Underwear:
-      points: 1
+    RightArm:
+      points: 6
       required: false
-    Undershirt:
-      points: 1
+    RightHand:
+      points: 6
       required: false
-    Tail:
-      points: 1
+    LeftArm:
+      points: 6
+      required: false
+    LeftHand:
+      points: 6
       required: false
 
 - type: humanoidBaseSprite
