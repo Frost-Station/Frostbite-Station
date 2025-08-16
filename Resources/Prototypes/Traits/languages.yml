@@ -4,13 +4,6 @@
   points: -1
   # slots: 1
   # itemGroupSlots: 0
-  requirements:
-    # - !type:CharacterItemGroupRequirement
-    #   group: TraitsLanguagesBasic
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - Muted
   functions:
     - !type:TraitModifyLanguages
       languagesSpoken:
